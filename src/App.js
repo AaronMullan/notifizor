@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Card from './Card';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	localStorage.setItem('test', 'mytest');
+	const huh = localStorage.getItem('test');
+	const key = process.env.REACT_APP_API_KEY;
+	console.log('wtf', huh, key);
+	return (
+		<div className="App">
+			<Header></Header>
+			<CardGroup>
+				<Card />
+				<Card />
+			</CardGroup>
+		</div>
+	);
 }
 
 export default App;
