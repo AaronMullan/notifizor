@@ -7,6 +7,7 @@ export default function Header() {
 }
 
 const headerStyles = {
+	marginTop: '30px',
 	textAlign: 'center',
 	backgroundColor: '#fff',
 	paddingBottom: '30px',
