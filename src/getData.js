@@ -1,4 +1,3 @@
-// import fetch from '../../util/fetch-fill';
 const key = process.env.REACT_APP_API_KEY;
 
 async function getData() {
@@ -7,6 +6,7 @@ async function getData() {
 	);
 	let data = await response.json();
 	const results = data.results;
+	localStorage.setItem('userData', JSON.stringify(results));
 	return results;
 }
 
