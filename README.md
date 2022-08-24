@@ -1,7 +1,15 @@
+# About
+
+Notifizor is a notification app to show the latest climate news from the New York Times.
+
+The app uses localStorage to keep two collections: One is an array of `Notifications` and the other is an array of `Dismissed Notifications`. On page load the app calls to the NYT api to get the latest 10 climate-related articles and adds any unique ones to the `Notifications` array. The notifications are then displayed on cards. Any notifications which have been `Dismissed` are not displayed.
+
+Each card has two buttons: `View` or `Dismiss`. View links to the article, and Dismiss adds that notification to the `Dismissed` array. A global Dismissal reset button is at the bottom of the page.
+
 ## To Run locally
 
 Clone the repo. You will need to add a .env file with a value for `REACT_APP_API_KEY`.
-That value can be found by concatenating these two strings: 'futtqKINnROoG8E' and 'JLtBnx9E45xEo2Zj0'.
+One operational value can be found by concatenating these two strings: 'futtqKINnROoG8E' and 'JLtBnx9E45xEo2Zj0'.
 
 In the project directory, you can run:
 
