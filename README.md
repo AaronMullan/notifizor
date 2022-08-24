@@ -1,5 +1,7 @@
 # About
 
+### Deployed version: https://notifizor.herokuapp.com/
+
 Notifizor is a notification app to show the latest climate news from the New York Times.
 
 The app uses localStorage to keep two collections: One is an array of `Notifications` and the other is an array of `Dismissed Notifications`. On page load the app calls to the NYT api to get the latest 10 climate-related articles and adds any unique ones to the `Notifications` array. The notifications are then displayed on cards. Any notifications which have been `Dismissed` are not displayed.
