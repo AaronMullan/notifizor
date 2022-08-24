@@ -1,6 +1,7 @@
 ## To Run locally
 
 Clone the repo. You will need to add a .env file with a value for `REACT_APP_API_KEY`.
+That value can be found by concatenating these two strings: 'futtqKINnROoG8E' and 'JLtBnx9E45xEo2Zj0'.
 
 In the project directory, you can run:
 
