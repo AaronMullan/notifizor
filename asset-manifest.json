@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/notifizor/static/css/main.e480f85d.css",
+    "main.js": "/notifizor/static/js/main.0b8dd7c7.js",
+    "static/js/787.e0c526a2.chunk.js": "/notifizor/static/js/787.e0c526a2.chunk.js",
+    "index.html": "/notifizor/index.html",
+    "main.e480f85d.css.map": "/notifizor/static/css/main.e480f85d.css.map",
+    "main.0b8dd7c7.js.map": "/notifizor/static/js/main.0b8dd7c7.js.map",
+    "787.e0c526a2.chunk.js.map": "/notifizor/static/js/787.e0c526a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e480f85d.css",
+    "static/js/main.0b8dd7c7.js"
+  ]
+}
