@@ -11,9 +11,7 @@ export default function MyCard({
 	handleDismissal,
 }) {
 	const handleClick = () => {
-		// setDismissed([...dismissed, url]);
 		handleDismissal(url);
-		console.log('click handles', url);
 	};
 	const localDate = new Date(date).toLocaleDateString();
 
