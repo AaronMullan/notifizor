@@ -13,7 +13,7 @@ const CustomCardGroup = () => {
 		JSON.parse(localStorage.getItem('dismissed')) || []
 	);
 	useEffect(() => {
-		getData().then((data) => setCardData(data));
+		getData(cardData).then((data) => setCardData(data));
 		console.log('fresh data');
 	}, []);
 
