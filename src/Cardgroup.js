@@ -14,7 +14,6 @@ const CustomCardGroup = () => {
 	);
 	useEffect(() => {
 		getData(cardData).then((data) => setCardData(data));
-		console.log('fresh data');
 	}, []);
 
 	const handleDismissal = (url) => {
@@ -38,19 +37,21 @@ const CustomCardGroup = () => {
 	return (
 		<>
 			<CardGroup style={{ marginTop: '20px' }}>
-				{displayData.map((item, index) => {
-					return (
-						<Card
-							image={item.multimedia[2].url}
-							title={item.title}
-							text={item.abstract}
-							date={item.published_date}
-							url={item.url}
-							key={index}
-							handleDismissal={handleDismissal}
-						/>
-					);
-				})}
+				{displayData[0] &&
+					displayData?.map((item, index) => {
+						console.log(item?.multimedia);
+						return (
+							<Card
+								image={item?.multimedia?.[2]?.url}
+								title={item?.title}
+								text={item?.abstract}
+								date={item?.published_date}
+								url={item?.url}
+								key={index}
+								handleDismissal={handleDismissal}
+							/>
+						);
+					})}
 			</CardGroup>
 			<div
 				style={{ display: 'flex', justifyContent: 'flex-end', padding: '10px' }}
