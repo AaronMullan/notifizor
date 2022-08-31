@@ -39,7 +39,6 @@ const CustomCardGroup = () => {
 			<CardGroup style={{ marginTop: '20px' }}>
 				{displayData[0] &&
 					displayData?.map((item, index) => {
-						console.log(item?.multimedia);
 						return (
 							<Card
 								image={item?.multimedia?.[2]?.url}
